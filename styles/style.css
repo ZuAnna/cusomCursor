@@ -1,0 +1,92 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  font-size: 24px;
+}
+
+body {
+  max-width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: #5d5c61;
+  color: #fff;
+  height: 100vh;
+  position: relative;
+  cursor: none;
+}
+
+.container {
+  margin: 0 auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.title__cursor {
+  line-height: 50px;
+  text-align: center;
+  font-size: 2rem;
+  border: none;
+  letter-spacing: 0.2rem;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  z-index: 2;
+}
+.title__cursor-out {
+  padding-top: 42vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.title__cursor:hover {
+  text-shadow: -60px 30px 0px #557a95, -62px 32px 10px #7395ae;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in;
+}
+
+.cursor {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 2px solid #7395ae;
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: transform, background-color;
+  transition-property: transform, background-color, -webkit-transform;
+  z-index: -1;
+}
+
+.cursor-transformation {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  background-color: #7395ae;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: transform, background-color;
+  transition-property: transform, background-color, -webkit-transform;
+}
+
+/*# sourceMappingURL=style.css.map */
