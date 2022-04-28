@@ -2,10 +2,10 @@
   "name": "myCursor",
   "description": "Мой кастомный курсор",
   "icons": [
-    { "src": "pngfav/favicon192.png",
+    { "src": "img/pngfav/favicon192.png",
        "type": "image/png",
        "sizes": "192x192" },
-    { "src": "pngfav/favicon512.png",
+    { "src": "img/pngfav/favicon512.png",
        "type": "image/png",
        "sizes": "512x512" }
   ]
