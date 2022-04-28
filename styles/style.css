@@ -89,4 +89,12 @@ body {
   transition-property: transform, background-color, -webkit-transform;
 }
 
+.noScroll {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
