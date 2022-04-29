@@ -57,8 +57,17 @@ body {
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: all 1s ease;
-  transition-property: transform, background-color;
+  transition-property: transform, background-color, transform;
   z-index: -1;
+  animation: cursorPuls .5s infinite alternate;
+}
+@keyframes cursorPuls {
+  from{
+    transform: scale(1.5);
+  }
+  to{
+    transform: scale(1.4);
+  }
 }
 
 .cursor-transformation {

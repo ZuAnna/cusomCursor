@@ -70,13 +70,36 @@ body {
   pointer-events: none;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-transition-property: background-color, -webkit-transform;
-  transition-property: background-color, -webkit-transform;
-  transition-property: transform, background-color;
-  transition-property: transform, background-color, -webkit-transform;
+  -webkit-transition-property: background-color, -webkit-transform, -webkit-transform;
+  transition-property: background-color, -webkit-transform, -webkit-transform;
+  transition-property: transform, background-color, transform;
+  transition-property: transform, background-color, transform, -webkit-transform, -webkit-transform;
   z-index: -1;
+  -webkit-animation: cursorPuls .5s infinite alternate;
+          animation: cursorPuls .5s infinite alternate;
 }
 
+@-webkit-keyframes cursorPuls {
+  from {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
+
+@keyframes cursorPuls {
+  from {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+}
 .cursor-transformation {
   -webkit-transform: scale(2);
           transform: scale(2);
